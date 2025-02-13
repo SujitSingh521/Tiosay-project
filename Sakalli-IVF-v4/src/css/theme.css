@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Gantari:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import "tailwindcss";
+
+body {
+    font-family: "Gantari", serif;
+    font-optical-sizing: auto;
+}
+
+.tab-button{
+background-color: rgba(116, 66, 138, 0.10);
+color: #74428A;
+}
+.tab-button.active {
+	background-color: #74428A;
+	color: #fff;
+}
+
+.form {
+    font-family: "Gantari", serif !important;
+    font-optical-sizing: auto;
+}
+
+input {
+    font-family: "Figtree", serif !important;
+    font-optical-sizing: auto !important; 
+}
+
+.figtree {
+    font-family: "Figtree", serif !important;
+    font-optical-sizing: auto !important;
+}
+
+button {
+    cursor: pointer;
+}
+
+li {
+    cursor: pointer;
+}
+
+.hoverBtn:hover {
+    background-color: #74428A;
+    color: white;
+}
+
+ .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out;
+  }
+  .accordion.active .accordion-content {
+    max-height: 500px; /* Adjust based on content height */
+  }
+  
+
+
+  .accordion-group .minus{
+    display: none;
+  }
+  .accordion-group .active .minus {
+    display: block;
+    transition: 0.5s all ease-in-out; 
+}
+.accordion-group .active .plus {
+    display: none;
+    transition: 0.5s all ease-in-out; 
+}
+
+@media (max-width:1026px) {
+    #sidebar {
+        max-width: 100%;
+        width: 456px;
+    }
+
+    #sidebarButton {
+        display: block;
+    }
+    #sidebarLink{
+        display: none;
+    }
+
+
+}  
+
