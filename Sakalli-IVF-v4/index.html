@@ -1,11 +1,1918 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sakalli IVF</title>
+    <link href="./src/css/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
 </head>
+
 <body>
-    <h1>This is Home Page</h1>
+    <header>
+
+        <!-- Top Bar Start  -->
+        <div class="bg-[#F5EEF9] w-full flex items-center justify-between relative">
+            <div
+                class=" relative flex container max-w-[1260px] mx-auto items-center justify-between h-[56px] px-4 md:px-6 bg-[#F5EEF9] text-[#74428A] text-[9px] md:text-sm font-medium">
+                <div class="flex items-center space-x-2">
+                    <a class="flex items-center space-x-[4px] font-[400] text-[16px] cursor-pointer"
+                        href="tel:+905428840202">
+                        <img src="src/images/telephone-icon.svg" alt="Phone Icon" class="w-7 sm:w-5 h-7 sm:h-5 ml-0">
+                        <span class="hidden sm:inline-block">+905428840202</span>
+                    </a>
+
+                    <div class="w-[1px] h-6 bg-gray-400"></div>
+
+                    <a class="flex items-center space-x-[4px] font-[400] text-[16px] cursor-pointer"
+                        href="mailto:info@saklliivf.com">
+                        <img src="src/images/mail-icon.svg" alt="Mail Icon" class="w-7.5 sm:w-5 h-7.5 sm:h-5 ml-2">
+                        <span class="hidden sm:inline-block">info@saklliivf.com</span>
+                    </a>
+
+                </div>
+                <div id="dropdownButton"
+                    class="flex items-center space-x-[4px] bg-white px-4 py-2 rounded-md shadow-sm text-black font-medium focus:outline-none cursor-pointer">
+                    <img src="./src/images/GB.svg" alt="UK Flag" class="w-5 h-5">
+                    <span class="text-[16px]">English</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
+                <div id="dropdownMenu"
+                    class="absolute right-0 top-0 z-[99999] mt-12 right-4 md:right-12 w-36 bg-white rounded-md shadow-sm hidden">
+                    <div class="flex items-center space-x-2 px-4 py-2 hover:bg-gray-100 cursor-pointer">
+                        <img src="./src/images/GB.svg" alt="UK Flag" class="w-5 h-5">
+                        <span class="text-[16px]">English</span>
+                    </div>
+                    <div class="flex items-center space-x-2 px-2 py-2 hover:bg-gray-100 cursor-pointer">
+                        <img src="./src/images/GB.svg" alt="France Flag" class="w-5 h-5">
+                        <span class="text-[16px]">Français</span>
+                    </div>
+                    <div class="flex items-center space-x-2 px-2 py-2 hover:bg-gray-100 cursor-pointer">
+                        <img src="./src/images/GB.svg" alt="Italy Flag" class="w-5 h-5">
+                        <span class="text-[16px]">Italiano</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Bar End -->
+
+        <div class="relative h-[100vh]">
+
+            <!-- carasol section image -->
+
+            <div class="absolute top-0 slider-container relative w-full">
+                <img src="./src/images/slider-2.jpg" class="slider-image absolute z-[-10] h-[100vh] object-cover w-full"
+                    alt="Slider 1">
+            </div>
+
+
+            <!-- Top Navigation Bar Start -->
+            <nav class=" bg-white/10 backdrop-blur-[14px] ">
+                <div
+                    class="container max-w-[1260px] mx-auto px-4 md:px-6 h-[60px] md:h-[80px] flex justify-between items-center">
+                    <div class="flex justify-between items-center py-4 w-full">
+                        <a href="/index.html"><img class="w-[120px] md:w-fit cursor-pointer" src="src/images/logo-white.svg"
+                                alt></a>
+                        <div id="sidebarLink" class="hidden lg:flex space-x-[24px] items-center ">
+                            <a href="#"
+                                class="text-white font-[400] text-[16px] leading-[24px] hover:bg-[#74428A] px-2 py-[9px] rounded-md ">
+                                Home</a>
+                            <a href="#"
+                                class="text-white font-[400] text-[16px] leading-[24px] hover:bg-[#74428A] px-2 py-[9px] rounded-md">About</a>
+                            <div class>
+                                <button id="menu-toggle"
+                                    class="flex items-centertext-white items-center text-white font-[400] text-[16px] leading-[24px] hover:bg-[#74428A] px-2 py-[9px] rounded-md focus:outline-none">
+                                    Treatments & Services
+                                    <svg xmlns="http://www.w3.org/2000/svg" id="menu-arrow"
+                                        class="h-4 w-4 ml-2 transition-transform" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path fill-rule="evenodd"
+                                            d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.06 1.06l-4 4a.75.75 0 01-1.06 0l-4-4a.75.75 0 01.02-1.06z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <div id="mega-menu" class="absolute left-0 mt-6 hidden w-full bg-white shadow-md z-10">
+                                    <div
+                                        class="container mx-auto flex gap-6 px-12 py-6  border-b border-[#EAECF0] borderb-2 mb-8">
+                                        <div class="w-[412px] mt-6">
+                                            <h4
+                                                class="font-bold text-[#74428A] mb-[22px] leading-[20px] font-[400] figtree text-[14px]">
+                                                IVF and Fertility
+                                                Treatments</h4>
+                                            <div class="flex items-start gap-4">
+                                                <div class="mt-[2px]">
+                                                    <img src="src/images/point.svg" alt>
+                                                </div>
+                                                <a href="#" class="flex flex-col items-start justify-start">
+                                                    <p
+                                                        class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                                        Intracytoplasmic Sperm
+                                                        Injection (ICSI)
+                                                    </p>
+                                                    <p
+                                                        class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                                        Advanced fertility
+                                                        treatment for precise
+                                                        sperm injection.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="flex items-start gap-4 mt-[28px]">
+                                                <div class="mt-[2px]">
+                                                    <img src="src/images/point.svg" alt>
+                                                </div>
+                                                <a href="#" class="flex flex-col items-start justify-start">
+                                                    <p
+                                                        class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                                        Intrauterine
+                                                        Insemination
+                                                    </p>
+                                                    <p
+                                                        class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                                        A simple and effective
+                                                        fertility treatment for
+                                                        couples.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <hr class="text-[#EAECF0] my-6 ">
+                                            <h4
+                                                class="font-bold text-[#74428A] mb-[22px] leading-[20px] font-[400] figtree text-[14px]">
+                                                Fertility Testing Diagnosis</h4>
+                                            <div class="flex items-start gap-4">
+                                                <div class="mt-[2px]">
+                                                    <img src="src/images/point.svg" alt>
+                                                </div>
+                                                <a href="#" class="flex flex-col items-start justify-start">
+                                                    <p
+                                                        class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                                        Female Fertility Testing
+                                                    </p>
+                                                    <p
+                                                        class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                                        Assessing your fertility
+                                                        to guide your next
+                                                        steps.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="flex items-start gap-4 mt-[24px]">
+                                                <div class="mt-[2px]">
+                                                    <img src="src/images/point.svg" alt>
+                                                </div>
+                                                <a href="#" class="flex flex-col items-start justify-start">
+                                                    <p
+                                                        class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                                        Male Fertility Testing
+                                                    </p>
+                                                    <p
+                                                        class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                                        Understanding male
+                                                        fertility for informed
+                                                        decisions.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="w-[412px] border-l-2 border-[#EAECF0] px-12  mt-6">
+                                            <h4
+                                                class="font-bold text-[#74428A] mb-[22px] leading-[20px] font-[400] figtree text-[14px]">
+                                                Fertility Preservation</h4>
+                                            <div class="flex items-start gap-4">
+                                                <div class="mt-[2px]">
+                                                    <img src="src/images/point.svg" alt>
+                                                </div>
+                                                <a href="#" class="flex flex-col items-start justify-start">
+                                                    <p
+                                                        class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                                        Cancer & Fertility
+                                                        Preservation
+                                                    </p>
+                                                    <p
+                                                        class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                                        Preserve fertility
+                                                        before treatment.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="flex items-start gap-4 mt-[28px]">
+                                                <div class="mt-[2px]">
+                                                    <img src="src/images/point.svg" alt>
+                                                </div>
+                                                <a href="#" class="flex flex-col items-start justify-start">
+                                                    <p
+                                                        class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                                        Egg Freezing
+                                                    </p>
+                                                    <p
+                                                        class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                                        Preserve your fertility
+                                                        for the future.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="flex items-start gap-4 mt-[28px]">
+                                                <div class="mt-[2px]">
+                                                    <img src="src/images/point.svg" alt>
+                                                </div>
+                                                <a href="#" class="flex flex-col items-start justify-start">
+                                                    <p
+                                                        class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                                        Embryo Freezing
+                                                    </p>
+                                                    <p
+                                                        class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                                        Secure your future with
+                                                        preserved embryos.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="flex items-start gap-4 mt-[28px]">
+                                                <div class="mt-[2px]">
+                                                    <img src="src/images/point.svg" alt>
+                                                </div>
+                                                <a href="#" class="flex flex-col items-start justify-start">
+                                                    <p
+                                                        class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                                        Sperm Freezing
+                                                    </p>
+                                                    <p
+                                                        class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                                        Safeguard your fertility
+                                                        for the future.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="flex items-start gap-4 mt-[28px]">
+                                                <div class="mt-[2px]">
+                                                    <img src="src/images/point.svg" alt>
+                                                </div>
+                                                <a href="#" class="flex flex-col items-start justify-start">
+                                                    <p
+                                                        class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                                        Fertility Preservation
+                                                        at Sakalli IVF
+                                                    </p>
+                                                    <p
+                                                        class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                                        Protect your future with
+                                                        Sakalli IVF.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="w-[412px] h-fit mt-6 p-4 bg-[#F9FAFB]">
+                                            <div class="flex items-start gap-4">
+                                                <div class="mt-[2px]">
+                                                    <img src="src/images/point.svg" alt>
+                                                </div>
+                                                <a href="#" class="flex flex-col items-start justify-start">
+                                                    <p
+                                                        class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                                        Reproductive & Genetic
+                                                        Testing
+                                                    </p>
+                                                    <p
+                                                        class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                                        Ensure a healthy future
+                                                        with advanced testing
+                                                        options.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="flex items-start gap-4 mt-[28px]">
+                                                <div class="mt-[2px]">
+                                                    <img src="src/images/point.svg" alt>
+                                                </div>
+                                                <a href="./become-an-egg-donor.html" class="flex flex-col items-start justify-start">
+                                                    <p
+                                                        class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                                        Becoming An Egg Donor
+                                                    </p>
+                                                    <p
+                                                        class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                                        Give the gift of life
+                                                        and help families grow.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="flex items-start gap-4 mt-[28px]">
+                                                <div class="mt-[2px]">
+                                                    <img src="src/images/point.svg" alt>
+                                                </div>
+                                                <a href="#" class="flex flex-col items-start justify-start">
+                                                    <p
+                                                        class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                                        Process & Pricing
+                                                    </p>
+                                                    <p
+                                                        class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                                        Simple process and clear
+                                                        pricing for fertility
+                                                        preservation.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <div class="flex items-start gap-4 mt-[28px]">
+                                                <div class="mt-[2px]">
+                                                    <img src="src/images/point.svg" alt>
+                                                </div>
+                                                <a href="#" class="flex flex-col items-start justify-start">
+                                                    <p
+                                                        class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                                        Surrogacy
+                                                    </p>
+                                                    <p
+                                                        class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                                        Building families with
+                                                        care and support.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="w-full mt-6 container mx-auto">
+                                        <div class="px-12 pb-8">
+                                            <h4
+                                                class="font-bold text-[#74428A] mb-[8px] leading-[20px] font-[400] figtree text-[14px]">
+                                                Donation</h4>
+                                            <div class="flex items-center gap-[120px] w-full ">
+                                                <div class="flex items-start gap-4 mt-[18px] ">
+                                                    <div class="mt-[2px]">
+                                                        <img src="src/images/point.svg" alt>
+                                                    </div>
+                                                    <a href="#" class="flex flex-col items-start justify-start">
+                                                        <p
+                                                            class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                                            Egg Donation
+                                                        </p>
+                                                        <p
+                                                            class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                                            Help families grow
+                                                            by becoming an egg
+                                                            donor.
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <div class="flex  items-start gap-4 mt-[18px]">
+                                                    <div class="mt-[2px]">
+                                                        <img src="src/images/point.svg" alt>
+                                                    </div>
+                                                    <a href="#" class="flex flex-col items-start justify-start">
+                                                        <p
+                                                            class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                                            Embryo Donation
+                                                        </p>
+                                                        <p
+                                                            class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                                            Give the gift of
+                                                            parenthood by
+                                                            donating embryos.
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                                <div class="flex items-start gap-4 mt-[18px]">
+                                                    <div class="mt-[2px]">
+                                                        <img src="src/images/point.svg" alt>
+                                                    </div>
+                                                    <a href="#" class="flex flex-col items-start justify-start">
+                                                        <p
+                                                            class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                                            Sperm Donation
+                                                        </p>
+                                                        <p
+                                                            class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                                            Help create families
+                                                            by donating sperm.
+                                                        </p>
+                                                    </a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#"
+                                class="text-white font-[400] text-[16px] leading-[24px] hover:bg-[#74428A] px-2 py-[9px] rounded-md">For
+                                Patients</a>
+                            <a href="#"
+                                class="text-white font-[400] text-[16px] leading-[24px] hover:bg-[#74428A] px-2 py-[9px] rounded-md">Blog</a>
+                            <a href="#"
+                                class="text-white font-[400] text-[16px] leading-[24px] hover:bg-[#74428A] px-2 py-[9px] rounded-md">Contact</a>
+                        </div>
+                        <button id="sidebarButton" class="hidden text-white focus:outline-none">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <!-- Top Navigation Bar End -->
+
+            <!-- carasol section content Start -->
+            <div
+                class="h-[80vh] lg:h-[calc(100vh_-_20vh)] py-12 container max-w-[1260px] mx-auto flex flex-col justify-center px-4 lg:px-0">
+                <div class="max-w-[878px] lg:ml-6 mx-auto">
+                    <div
+                        class="mb-5 md:mb-2 w-fit flex items-center justify-start space-x-2 bg-[#74428A] text-white px-1 py-1 rounded-full">
+                        <a href="#"
+                            class="bg-white text-[#74428A] px-3 py-1 rounded-full text-sm font-medium">Important</a>
+                        <a class="flex items-center text-sm font-medium" href="#">
+                            Become an Egg Donor
+                            <div class="mx-2">
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M3.33325 7.99998H12.6666M12.6666 7.99998L7.99992 3.33331M12.6666 7.99998L7.99992 12.6666"
+                                        stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                    <p
+                        class="slider-heading mb-2 text-[32px] lg:text-[64px] leading-[1.2] lg:leading-[87.1px] tracking-[-2%] font-[700] text-[#FFFFFF] mb-4">
+                        NURTURING DREAMS CREATING FAMILIES
+                    </p>
+                    <p
+                        class="slider-subtext text-[16px] lg:text-[16px] sm:text-[20px] leading-[24px] lg:leading-[30px] figtree font-[400] text-[#FFFFFF] mb-12">
+                        Bearded IVF for a Healthy Tomorrow: Take a Step to Your
+                        Dream Family
+                    </p>
+                    <button
+                        class="slider-button lg:w-auto bg-[#74428A] text-white px-[36px] py-[12px] rounded-full font-semibold transition duration-300 hover:bg-[#633875] focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        Book an Appointment
+                    </button>
+                    <p
+                        class="text-[12px] w-full leading-[14.4px] figtree font-[400] text-white mt-2 flex px-1 text-center lg:text-left justify-start">
+                        Believe in Miracles and the Power of Hope
+                    </p>
+                </div>
+            </div>
+            <!-- carasol section content End -->
+
+
+        </div>
+    </header>
+
+    <!-- Sidebar Start -->
+    <aside id="sidebar"
+        class=" fixed left-0 top-0 w-full h-full bg-white shadow-lg transform -translate-x-full transition-transform duration-300 z-50 p-6 ">
+        <div class=" flex justify-between items-center ">
+            <a href="/index.html"><img class="w-[120px] md:w-fit cursor-pointer" src="src/images/pain-logo.svg" alt></a>
+            <button id="closeSidebar" class="text-gray-700 hover:text-gray-900">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+        <div class="flex w-full flex-col items-center justify-start mt-6 ">
+
+            <a href="#" class="w-full  text-black py-4 font-[400] text-[16px] leading-[24px] py-[9px] ">Home</a>
+            <a href="#"
+                class="w-full  text-black py-4 font-[400] text-[16px] leading-[24px] hover:text-pink-600">About</a>
+            <div class="w-full  py-4">
+                <button id="sidebar-menu-toggle"
+                    class="flex items-center text-black font-[400] text-[16px] leading-[24px] hover:text-pink-600 focus:outline-none">
+                    Treatments & Services
+                    <svg xmlns="http://www.w3.org/2000/svg" id="sidebar-menu-arrow"
+                        class="h-4 w-4 ml-2 transition-transform " viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M5.23 7.21a.75.75 0 011.06.02L10 10.94l3.71-3.71a.75.75 0 011.06 1.06l-4 4a.75.75 0 01-1.06 0l-4-4a.75.75 0 01.02-1.06z"
+                            clip-rule="evenodd" />
+                    </svg>
+                </button>
+                <div id="sidebar-mega-menu"
+                    class="absolute left-0 mt-6 hidden w-full bg-white shadow-md overflow-y-scroll h-[calc(100vh_-_30vh)] ">
+                    <div
+                        class="container mx-auto flex flex-col gap-6 px-6 md:px-12 md:py-6  border-b border-[#EAECF0] borderb-2 mb-8">
+                        <div class=" my-6">
+                            <h4
+                                class="font-bold text-[#74428A] mb-[22px] leading-[20px] font-[400] figtree text-[14px]">
+                                IVF and Fertility Treatments</h4>
+                            <div class="flex items-start gap-4">
+                                <div class="mt-[2px]">
+                                    <img src="src/images/point.svg" alt>
+                                </div>
+                                <a href="#" class="flex flex-col items-start justify-start">
+                                    <p class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                        Intracytoplasmic Sperm Injection
+                                        (ICSI)
+                                    </p>
+                                    <p class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                        Advanced fertility treatment for
+                                        precise sperm injection.
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="flex items-start gap-4 mt-[28px]">
+                                <div class="mt-[2px]">
+                                    <img src="src/images/point.svg" alt>
+                                </div>
+                                <a href="#" class="flex flex-col items-start justify-start">
+                                    <p class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                        Intracytoplasmic Sperm Injection
+                                        (ICSI)
+                                    </p>
+                                    <p class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                        Advanced fertility treatment for
+                                        precise sperm injection.
+                                    </p>
+                                </a>
+                            </div>
+                            <hr class="text-[#EAECF0] my-6 ">
+                            <h4
+                                class="font-bold text-[#74428A] mb-[22px] leading-[20px] font-[400] figtree text-[14px]">
+                                Fertility Testing Diagnosis</h4>
+                            <div class="flex items-start gap-4">
+                                <div class="mt-[2px]">
+                                    <img src="src/images/point.svg" alt>
+                                </div>
+                                <a href="#" class="flex flex-col items-start justify-start">
+                                    <p class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                        Female Fertility Testing
+                                    </p>
+                                    <p class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                        Assessing your fertility to guide
+                                        your next steps.
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="flex items-start gap-4 mt-[24px]">
+                                <div class="mt-[2px]">
+                                    <img src="src/images/point.svg" alt>
+                                </div>
+                                <a href="#" class="flex flex-col items-start justify-start">
+                                    <p class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                        Male Fertility Testing
+                                    </p>
+                                    <p class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                        Understanding male fertility for
+                                        informed decisions.
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class=" border-t-2 border-b-2 border-[#EAECF0] md:px-12  py-12">
+                            <h4
+                                class="font-bold text-[#74428A] mb-[22px] leading-[20px] font-[400] figtree text-[14px]">
+                                Fertility Preservation</h4>
+                            <div class="flex items-start gap-4">
+                                <div class="mt-[2px]">
+                                    <img src="src/images/point.svg" alt>
+                                </div>
+                                <a href="#" class="flex flex-col items-start justify-start">
+                                    <p class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                        Cancer & Fertility Preservation
+                                    </p>
+                                    <p class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                        Preserve fertility before treatment.
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="flex items-start gap-4 mt-[28px]">
+                                <div class="mt-[2px]">
+                                    <img src="src/images/point.svg" alt>
+                                </div>
+                                <a href="#" class="flex flex-col items-start justify-start">
+                                    <p class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                        Egg Freezing
+                                    </p>
+                                    <p class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                        Preserve your fertility for the
+                                        future.
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="flex items-start gap-4 mt-[28px]">
+                                <div class="mt-[2px]">
+                                    <img src="src/images/point.svg" alt>
+                                </div>
+                                <a href="#" class="flex flex-col items-start justify-start">
+                                    <p class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                        Embryo Freezing
+                                    </p>
+                                    <p class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                        Secure your future with preserved
+                                        embryos.
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="flex items-start gap-4 mt-[28px]">
+                                <div class="mt-[2px]">
+                                    <img src="src/images/point.svg" alt>
+                                </div>
+                                <a href="#" class="flex flex-col items-start justify-start">
+                                    <p class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                        Sperm Freezing
+                                    </p>
+                                    <p class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                        Safeguard your fertility for the
+                                        future.
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="flex items-start gap-4 mt-[28px]">
+                                <div class="mt-[2px]">
+                                    <img src="src/images/point.svg" alt>
+                                </div>
+                                <a href="#" class="flex flex-col items-start justify-start">
+                                    <p class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                        Fertility Preservation at Sakalli
+                                        IVF
+                                    </p>
+                                    <p class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                        Protect your future with Sakalli
+                                        IVF.
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class=" h-fit my-6">
+                            <div class="flex items-start gap-4">
+                                <div class="mt-[2px]">
+                                    <img src="src/images/point.svg" alt>
+                                </div>
+                                <a href="#" class="flex flex-col items-start justify-start">
+                                    <p class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                        Reproductive & Genetic Testing
+                                    </p>
+                                    <p class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                        Ensure a healthy future with
+                                        advanced testing options.
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="flex items-start gap-4 mt-[28px]">
+                                <div class="mt-[2px]">
+                                    <img src="src/images/point.svg" alt>
+                                </div>
+                                <a href="./become-an-egg-donor.html" class="flex flex-col items-start justify-start">
+                                    <p class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                        Becoming An Egg Donor
+                                    </p>
+                                    <p class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                        Give the gift of life and help
+                                        families grow.
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="flex items-start gap-4 mt-[28px]">
+                                <div class="mt-[2px]">
+                                    <img src="src/images/point.svg" alt>
+                                </div>
+                                <a href="#" class="flex flex-col items-start justify-start">
+                                    <p class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                        Process & Pricing
+                                    </p>
+                                    <p class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                        Simple process and clear pricing for
+                                        fertility preservation.
+                                    </p>
+                                </a>
+                            </div>
+                            <div class="flex items-start gap-4 mt-[28px]">
+                                <div class="mt-[2px]">
+                                    <img src="src/images/point.svg" alt>
+                                </div>
+                                <a href="#" class="flex flex-col items-start justify-start">
+                                    <p class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                        Surrogacy
+                                    </p>
+                                    <p class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                        Building families with care and
+                                        support.
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full my-6 container mx-auto">
+                        <div class="px-4 pb-8">
+                            <h4 class="font-bold text-[#74428A] mb-[8px] leading-[20px] font-[400] figtree text-[14px]">
+                                Donation</h4>
+                            <div class="flex flex-col items-center  w-full ">
+                                <div class="flex items-start gap-4 mt-[18px] w-full">
+                                    <div class="mt-[2px]">
+                                        <img src="src/images/point.svg" alt>
+                                    </div>
+                                    <a href="#" class="flex flex-col items-start justify-start">
+                                        <p class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                            Egg Donation
+                                        </p>
+                                        <p class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                            Help families grow by becoming
+                                            an egg donor.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="flex  items-start gap-4 mt-[18px] w-full">
+                                    <div class="mt-[2px]">
+                                        <img src="src/images/point.svg" alt>
+                                    </div>
+                                    <a href="#" class="flex flex-col items-start justify-start">
+                                        <p class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                            Embryo Donation
+                                        </p>
+                                        <p class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                            Give the gift of parenthood by
+                                            donating embryos.
+                                        </p>
+                                    </a>
+                                </div>
+                                <div class="flex items-start gap-4 mt-[18px] w-full">
+                                    <div class="mt-[2px]">
+                                        <img src="src/images/point.svg" alt>
+                                    </div>
+                                    <a href="#" class="flex flex-col items-start justify-start">
+                                        <p class="m-0 p-0 text-[16px] font-[600] leading-[24px] text-[#101828]">
+                                            Sperm Donation
+                                        </p>
+                                        <p class="m-0 p-0 leading-[20px] font-[400] figtree text-[14px] text-[#475467]">
+                                            Help create families by donating
+                                            sperm.
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="w-full  text-black py-4 font-[400] text-[16px] leading-[24px] hover:text-pink-600">For
+                Patients</a>
+            <a href="#"
+                class="w-full  text-black py-4 font-[400] text-[16px] leading-[24px] hover:text-pink-600">Blog</a>
+            <a href="#"
+                class="w-full  text-black py-4 font-[400] text-[16px] leading-[24px] hover:text-pink-600">Contact</a>
+        </div>
+    </aside>
+    <!-- Sidebar End-->
+
+    <div class="page-wraper">
+        <section name="AboutUs" class="py-12 md:py-24" pl-2 pr-0 ">
+            <div
+                class=" w-full flex md:flex-wrap lg:flex-nowrap px-0 gap-4 bg-[#F9FAFB] container mx-auto ">
+                <div
+                    class=" md:w-full px-6 flex items-center flex-col justify-start py-8">
+            <p class="w-full text-[#74428A] text-[16px] leading-[24px] font-[600] ">About
+                Us</p>
+            <p class="w-full text-[#101828] text-[36px] leading-[60px] target-[-2%] mt-2 mb-3">Bearish
+                IVF Center
+            </p>
+            <p
+                class="w-full text-[16px] sm:text-[20px] leading-[30px] figtree font-[400]  text-[#475467]">
+                At Sakallı IVF, we are committed to helping couples
+                achieve their dream of starting a family
+                naturally. With expert staff, state-of-the-art
+                equipment, and a personalized approach, we offer
+                advanced reproductive treatments like IVF and ICSI, as
+                well as supportive services such as genetic
+                screening and embryo donation.
+            </p>
+            <p
+                class="w-full mt-4 mb-6 text-[#475467] text-[16px] sm:text-[20px] leading-[30px] figtree font-[400]  text-[#475467]">
+                We support you every step of the way—before, during, and
+                after pregnancy. Join the Sakallı IVF
+                family and take the first step toward a healthy, happy
+                future.
+            </p>
+            <div class="w-full flex items-center justify-start gap-4">
+                <a href="#" class=" bg-[#74428A] text-[#FFFFFF] rounded-[40px] text-[18px] font-[600] px-4 py-2">Join
+                    Us</a>
+                <a href="#"
+                    class=" hoverBtn  border-[#74428A] border-2 text-[#74428A] hover:bg-[#74428A] hover:text-white rounded-[40px] text-[18px] font-[600] px-4 py-2 transition duration-300">
+                    More Details
+                </a>
+            </div>
+    </div>
+    <div class="hidden md:flex md:w-full px-6 relative  flex items-center justify-end">
+        <img class="w-[543px] h-[576px]" src="src/images/about-back.svg" alt>
+        <img class=" absolute bottom-11 left-[10px] w-[399px] h-[3 18px]" src="src/images/about-upper.svg" alt>
+    </div>
+    </div>
+    </section>
+
+
+
+    <section name="Our Treatments" class="py-12 md:py-24 pl-4 pr-4  mt-4 bg-[#F9FAFB] w">
+        <div class="flex items-center justify-center flex-col mx-auto max-w-[1260px]">
+            <p class="text-[#74428A] text-[16px] leading-[24px] text-center font-[600]">Our
+                Treatments</p>
+            <p
+                class="font-[600] text-center text-[30px] md:text-[36px] leading-[36px] md:leading-[50px] md:leading-[60px] target-[-2%] py-4">
+                Our Comprehensive Treatments &
+                Specialized Services</p>
+            <p
+                class="text-center font-[400] text-[16px] sm:text-[20px] leading-[30px] figtree text-[#475467] mb-12 px-2 md:w-[50%]">
+                Sakalli
+                IVF provides advanced fertility treatments with personalized
+                care, using the latest technology to ensure
+                success and comfort.</p>
+        </div>
+        <div class="flex flex-wrap justify-center py-8 mx-auto max-w-[1260px]">
+            <div class="flex flex-wrap gap-6 items-center justify-center">
+                <div
+                    class="relative group bg-gray-100 lg:w-[286px] md:w-[325px] max-w-full h-[360px] rounded-[12px] shadow-lg overflow-hidden card">
+                    <div class="absolute inset-0 bg-white flex flex-col justify-between items-start gap-4 px-6 py-6 
+                    transition-all duration-300 opacity-0 group-hover:opacity-100 card-content z-10">
+                        <div class="px-0">
+                            <p class=" text-[28px]  font-[700] leading-[33.04px] text-[#000000]">IVF
+                                and Fertility
+                                Treatments</p>
+                            <p class="text-gray-500 text-sm mt-1">Giving
+                                hope, creating families.</p>
+                        </div>
+                        <div>
+                            <a href="#"
+                                class=" text-sm font-medium hover:underline flex items-center  text-[#74428A] -mt-2">
+                                Read more
+                                <svg class="mt-[2.5px] ml-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.75 9H14.25" stroke="#74428A" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M9 3.75L14.25 9L9 14.25" stroke="#74428A" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                        </div>
+                    </div>
+                    <img src="./src/images/img1.png" alt="IVF and Fertility
+                    Treatments" class="w-full h-full object-cover">
+                    <!-- Overlay with Title -->
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-100 transition-opacity flex items-center justify-center text-center">
+                        <p class="text-white px-4 text-[28px] font-[700] text-center leading-[33.04px]">
+                            Fertility Preservation
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="relative group bg-gray-100 lg:w-[286px] md:w-[325px] max-w-full h-[360px] rounded-[12px] shadow-lg overflow-hidden card">
+                    <div class="absolute inset-0 bg-white flex flex-col justify-between items-start gap-4 px-6 py-6 
+                            transition-all duration-300 opacity-0 group-hover:opacity-100 card-content z-10">
+                        <div class="px-0">
+                            <p class=" text-[28px]  font-[700] leading-[33.04px] text-[#000000]">Fertility
+                                Preservation</p>
+                            <p class="text-gray-500 text-sm mt-1">Giving
+                                hope, creating families.</p>
+                        </div>
+                        <div>
+                            <a href="#"
+                                class=" text-sm font-medium hover:underline flex items-center  text-[#74428A] -mt-2">
+                                Read more
+                                <svg class="mt-[2.5px] ml-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.75 9H14.25" stroke="#74428A" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M9 3.75L14.25 9L9 14.25" stroke="#74428A" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                        </div>
+                    </div>
+                    <img src="./src/images/img2.png" alt="Fertility Preservation" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-100 transition-opacity flex items-center justify-center text-center">
+                        <p
+                            class="  text-white px-4 text-[#FFFFFF] text-[28px] font-[700] text-center leading-[33.04px]">
+                            Fertility Preservation</p>
+                    </div>
+                </div>
+                <div
+                    class="relative group bg-gray-100 lg:w-[286px] md:w-[325px] max-w-full h-[360px] rounded-[12px] shadow-lg overflow-hidden card">
+                    <div
+                        class="absolute inset-0 bg-white flex flex-col justify-between items-start gap-4 px-6 py-6 transition-all duration-300  opacity-0 group-hover:opacity-100 card-content z-10">
+                        <div class="px-0">
+                            <p class=" text-[28px]  font-[700] leading-[33.04px] text-[#000000]">Donation</p>
+                            <p class="text-gray-500 text-sm mt-1">Giving
+                                hope, creating families.</p>
+                        </div>
+                        <div>
+                            <a href="#"
+                                class=" text-sm font-medium hover:underline flex items-center  text-[#74428A] -mt-2">
+                                Read more
+                                <svg class="mt-[2.5px] ml-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.75 9H14.25" stroke="#74428A" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M9 3.75L14.25 9L9 14.25" stroke="#74428A" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                        </div>
+                    </div>
+                    <img src="./src/images/img3.png" alt="Donation" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-100 transition-opacity flex items-center justify-center text-center">
+                        <p
+                            class="  text-white px-4 text-[#FFFFFF] text-[28px] font-[700] text-center leading-[33.04px]">
+                            Donation</p>
+                    </div>
+                </div>
+                <div
+                    class="relative group bg-gray-100 lg:w-[286px] md:w-[325px] max-w-full h-[360px] rounded-[12px] shadow-lg overflow-hidden card">
+                    <div
+                        class="absolute inset-0 bg-white flex flex-col justify-between items-start gap-4 px-6 py-6 transition-all duration-300  opacity-0 group-hover:opacity-100 card-content z-10">
+                        <div class="px-0">
+                            <p class=" text-[28px]  font-[700] leading-[33.04px] text-[#000000]">Fertility
+                                Testing &
+                                Diagnosis</p>
+                            <p class="text-gray-500 text-sm mt-1">Giving
+                                hope, creating families.</p>
+                        </div>
+                        <div>
+                            <a href="#"
+                                class=" text-sm font-medium hover:underline flex items-center  text-[#74428A] -mt-2">
+                                Read more
+                                <svg class="mt-[2.5px] ml-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.75 9H14.25" stroke="#74428A" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M9 3.75L14.25 9L9 14.25" stroke="#74428A" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                        </div>
+                    </div>
+                    <img src="./src/images/img4.png" alt="Fertility Testing & Diagnosis"
+                        class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-100 transition-opacity flex items-center justify-center text-center">
+                        <p
+                            class="  text-white px-4 text-[#FFFFFF] text-[28px] font-[700] text-center leading-[33.04px]">
+                            Fertility Testing & Diagnosis</p>
+                    </div>
+                </div>
+                <div
+                    class="relative group bg-gray-100 lg:w-[286px] md:w-[325px] max-w-full h-[360px] rounded-[12px] shadow-lg overflow-hidden card">
+                    <div
+                        class="absolute inset-0 bg-white flex flex-col justify-between items-start gap-4 px-6 py-6 transition-all duration-300  opacity-0 group-hover:opacity-100 card-content z-10">
+                        <div class="px-0">
+                            <p class=" text-[28px]  font-[700] leading-[33.04px] text-[#000000]">Reproductive
+                                &
+                                Genetic Testing</p>
+                            <p class="text-gray-500 text-sm mt-1">Giving
+                                hope, creating families.</p>
+                        </div>
+                        <div>
+                            <a href="#"
+                                class=" text-sm font-medium hover:underline flex items-center  text-[#74428A] -mt-2">
+                                Read more
+                                <svg class="mt-[2.5px] ml-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.75 9H14.25" stroke="#74428A" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M9 3.75L14.25 9L9 14.25" stroke="#74428A" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                        </div>
+                    </div>
+                    <img src="./src/images/img5.png" alt="Reproductive & Genetic Testing"
+                        class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-100 transition-opacity flex items-center justify-center text-center">
+                        <p
+                            class="  text-white px-4 text-[#FFFFFF] text-[28px] font-[700] text-center leading-[33.04px]">
+                            Reproductive & Genetic Testing</p>
+                    </div>
+                </div>
+                <div
+                    class="relative group bg-gray-100 lg:w-[286px] md:w-[325px] max-w-full h-[360px] rounded-[12px] shadow-lg overflow-hidden card">
+                    <div
+                        class="absolute inset-0 bg-white flex flex-col justify-between items-start gap-4 px-6 py-6 transition-all duration-300  opacity-0 group-hover:opacity-100 card-content z-10">
+                        <div class="px-0">
+                            <p class=" text-[28px]  font-[700] leading-[33.04px] text-[#000000]">Becoming
+                                an
+                                Egg Donor</p>
+                            <p class="text-gray-500 text-sm mt-1">Giving
+                                hope, creating families.</p>
+                        </div>
+                        <div>
+                            <a href="#"
+                                class=" text-sm font-medium hover:underline flex items-center  text-[#74428A] -mt-2">
+                                Read more
+                                <svg class="mt-[2.5px] ml-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.75 9H14.25" stroke="#74428A" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M9 3.75L14.25 9L9 14.25" stroke="#74428A" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                        </div>
+                    </div>
+                    <img src="./src/images/img6.png" alt="Becoming an Egg Donor" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-100 transition-opacity flex items-center justify-center text-center">
+                        <p
+                            class="  text-white px-4 text-[#FFFFFF] text-[28px] font-[700] text-center leading-[33.04px]">
+                            Becoming an Egg Donor</p>
+                    </div>
+                </div>
+                <div
+                    class="relative group bg-gray-100 lg:w-[286px] md:w-[325px] max-w-full h-[360px] rounded-[12px] shadow-lg overflow-hidden card">
+                    <div
+                        class="absolute inset-0 bg-white flex flex-col justify-between items-start gap-4 px-6 py-6 transition-all duration-300  opacity-0 group-hover:opacity-100 card-content z-10">
+                        <div class="px-0">
+                            <p class=" text-[28px]  font-[700] leading-[33.04px] text-[#000000]">Process
+                                & Pricing</p>
+                            <p class="text-gray-500 text-sm mt-1">Giving
+                                hope, creating families.</p>
+                        </div>
+                        <div>
+                            <a href="#"
+                                class=" text-sm font-medium hover:underline flex items-center  text-[#74428A] -mt-2">
+                                Read more
+                                <svg class="mt-[2.5px] ml-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.75 9H14.25" stroke="#74428A" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M9 3.75L14.25 9L9 14.25" stroke="#74428A" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                        </div>
+                    </div>
+                    <img src="./src/images/img7.png" alt="Process & Pricing" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-100 transition-opacity flex items-center justify-center text-center">
+                        <p
+                            class="  text-white px-4 text-[#FFFFFF] text-[28px] font-[700] text-center leading-[33.04px]">
+                            Process &
+                            Pricing</p>
+                    </div>
+                </div>
+                <div
+                    class="relative group bg-gray-100 lg:w-[286px] md:w-[325px] max-w-full h-[360px] rounded-[12px] shadow-lg overflow-hidden card">
+                    <div
+                        class="absolute inset-0 bg-white flex flex-col justify-between items-start gap-4 px-6 py-6 transition-all duration-300  opacity-0 group-hover:opacity-100 card-content z-10">
+                        <div class="px-0">
+                            <p class=" text-[28px]  font-[700] leading-[33.04px] text-[#000000]">Surrogacy</p>
+                            <p class="text-gray-500 text-sm mt-1">Giving
+                                hope, creating families.</p>
+                        </div>
+                        <div>
+                            <a href="#"
+                                class=" text-sm font-medium hover:underline flex items-center  text-[#74428A] -mt-2">
+                                Read more
+                                <svg class="mt-[2.5px] ml-2" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.75 9H14.25" stroke="#74428A" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M9 3.75L14.25 9L9 14.25" stroke="#74428A" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                        </div>
+                    </div>
+                    <img src="./src/images/img8.png" alt="Surrogacy" class="w-full h-full object-cover">
+                    <div
+                        class="absolute inset-0 bg-black/50 opacity-100 transition-opacity flex items-center justify-center text-center">
+                        <p
+                            class="  text-white px-4 text-[#FFFFFF] text-[28px] font-[700] text-center leading-[33.04px]">
+                            Surrogacy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-full flex items-center justify-center">
+            <a href="#"
+                class="text-[18px] w-fit mx-auto mt-8 rounded-[40px] leading-[21.6px] font-[600] bg-[#74428A] text-white px-6 py-3">Explore
+                More Services</a>
+        </div>
+    </section>
+
+
+    <section name="Our Team" class="max-w-[1260px] mx-auto py-12 md:py-24" my-4 ">
+            <div class=" flex items-center justify-center flex-col ">
+                <p
+                    class=" text-[#74428A] text-[16px] leading-[24px] text-center font-[600]">Our
+        Team</p>
+        <p
+            class="font-[600] text-center text-[30px] md:text-[36px] leading-[36px] md:leading-[50px] md:leading-[60px] target-[-2%] px-2 md:px-0 py-4 ">
+            Meet Our Professional Team</p>
+        <p
+            class="text-center font-[400] text-[16px] sm:text-[20px] leading-[30px] figtree text-[#475467] mb-12 px-4 md:w-[50%]">
+            Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore
+            magna aliqua.</p>
+        <div
+            class="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-full px-4">
+            <!-- Team Member Card 1 -->
+            <div class="relative lg:w-[286px] w-[324px] max-w-full mx-auto rounded-[12px] overflow-hidden shadow-lg">
+                <img class="w-full h-[380px] object-cover" src="src/images/team1.png" alt="Team Member 1">
+                <div
+                    class="absolute bottom-0 bg-white/20 backdrop-blur-sm h-[150px] px-4 py-4 text-left rounded-[12px] mx-4 mb-4 w-[90%]">
+                    <h3 class="text-lg font-semibold text-white mb-2 text-[24px]">Mustafa
+                        Sakalli</h3>
+                    <p class="text-sm text-white text-[18px] mb-1">Surgeon</p>
+                    <p class="text-sm text-white text-[16px]">10+ years
+                        experience</p>
+                </div>
+            </div>
+
+            <!-- Team Member Card 2 -->
+            <div class="relative lg:w-[286px] w-[324px] max-w-full  mx-auto rounded-[12px] overflow-hidden shadow-lg">
+                <img class="w-full h-[380px] object-cover" src="src/images/team2.png" alt="Team Member 2">
+                <div
+                    class="absolute bottom-0 bg-white/20 backdrop-blur-sm h-[150px] px-4 py-4 text-left rounded-[12px] mx-4 mb-4 w-[90%]">
+                    <h3 class="text-lg font-semibold text-white mb-2 text-[24px]">Jane
+                        Doe</h3>
+                    <p class="text-sm text-white text-[18px] mb-1">IVF
+                        Specialist</p>
+                    <p class="text-sm text-white text-[16px]">10+ years
+                        experience</p>
+                </div>
+            </div>
+
+            <!-- Team Member Card 3 -->
+            <div class="relative lg:w-[286px] w-[324px] max-w-full mx-auto rounded-[12px] overflow-hidden shadow-lg">
+                <img class="w-full h-[380px] object-cover" src="src/images/team3.png" alt="Team Member 3">
+                <div
+                    class="absolute bottom-0 bg-white/20 backdrop-blur-sm h-[150px] px-4 py-4 text-left rounded-[12px] mx-4 mb-4 w-[90%]">
+                    <h3 class="text-lg font-semibold text-white mb-2 text-[24px]">Jonna
+                        Smith</h3>
+                    <p class="text-sm text-white text-[18px] mb-1">Orthopedic
+                        Surgery</p>
+                    <p class="text-sm text-white text-[16px]">10+ years
+                        experience</p>
+                </div>
+            </div>
+
+            <!-- Team Member Card 4 -->
+            <div class="relative lg:w-[286px] w-[324px] max-w-full mx-auto rounded-[12px] overflow-hidden shadow-lg">
+                <img class="w-full h-[380px] object-cover" src="src/images/team4.png" alt="Team Member 4">
+                <div
+                    class="absolute bottom-0 bg-white/20 backdrop-blur-sm h-[150px] px-4 py-4 text-left rounded-[12px] mx-4 mb-4 w-[90%]">
+                    <h3 class="text-lg font-semibold text-white mb-2 text-[24px]">John
+                        Doe</h3>
+                    <p class="text-sm text-white text-[18px] mb-1">Obstetrics
+                        & Gynaecology</p>
+                    <p class="text-sm text-white text-[16px]">10+ years
+                        experience</p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+
+
+    <section name="Our Testimonials"
+        class=" relative max-w-[1260px] my-4 border-t-1 border-b-1 w-fit mx-auto border-[#EAECF0] py-12 md:py-24">
+        <div class="flex items-center justify-center flex-col container mx-auto ">
+            <p class="text-[#74428A] text-[16px] leading-[24px] text-center font-[600] ">Our
+                Testimonials</p>
+            <p
+                class="font-[600] text-center text-[30px] md:text-[36px] leading-[50px] md:leading-[60px] target-[-2%] px-4  py-4">
+                What Patients Are Saying!</p>
+            <p class="text-center font-[400] text-[16px] sm:text-[20px] leading-[30px] figtree text-[#475467] mb-12 px-4 md:w-[50%]">
+                Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.</p>
+            <div class="mt-4 flex flex-wrap items-start  flex-cols-2 lg:flex-cols-4 justify-center gap-[24px]   ">
+                <div class=" flex flex-row flex-wrap lg:flex-col w-full sm:w-[286px] gap-6 px-4 sm:px-0">
+                    <div
+                        class="flex flex-col items-center justify-center border-1 border-[#EAECF0] rounded-[24px] p-[24px]">
+                        <div class="flex items-center w-full">
+                            <img src="src/images/patient-1.png" class="object-cover h-[44px] w-[44px] mr-2 rounded-full"
+                                alt>
+                            <div class="flex flex-col  justify-between text-left gap-[4px]">
+                                <p class=" text-[16px] leading-[16.32px] tracking-[0.14px] text-[#101828] font-[600]">
+                                    Darrell Steward</p>
+                                <p class="figtree text-[14px] leading-[16.8px] font-[400] tracking-[0.2px]">Happy
+                                    Client
+                                </p>
+                            </div>
+                        </div>
+
+                        <p
+                            class="p-0 mt-4 text-[14.88px] leading-[24px] tracking-[0.14px] figtree font-[500] text-[#101828]">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua.in our current
+                            landscape.
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center border-1 border-[#EAECF0] rounded-[24px] p-[24px]">
+                        <div class="flex items-center w-full">
+                            <img src="src/images/patient-2.png" class="object-cover h-[44px] w-[44px] mr-2 rounded-full"
+                                alt>
+                            <div class="flex flex-col  justify-between text-left gap-[4px]">
+                                <p class=" text-[16px] leading-[16.32px] tracking-[0.14px] text-[#101828] font-[600]">
+                                    Robert Fox</p>
+                                <p class="figtree text-[14px] leading-[16.8px] font-[400] tracking-[0.2px]">Happy
+                                    Client
+                                </p>
+                            </div>
+                        </div>
+
+                        <p
+                            class="p-0 mt-4 text-[14.88px] leading-[24px] tracking-[0.14px] figtree font-[500] text-[#101828]">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua.in our current
+                            landscape.
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center border-1 border-[#EAECF0] rounded-[24px] p-[24px]">
+                        <div class="flex items-center w-full">
+                            <img src="src/images/patient-3.png" class="object-cover h-[44px] w-[44px] mr-2 rounded-full"
+                                alt>
+                            <div class="flex flex-col  justify-between text-left gap-[4px]">
+                                <p class=" text-[16px] leading-[16.32px] tracking-[0.14px] text-[#101828] font-[600]">
+                                    Devon Lane</p>
+                                <p class="figtree text-[14px] leading-[16.8px] font-[400] tracking-[0.2px]">Happy
+                                    Client
+                                </p>
+                            </div>
+                        </div>
+
+                        <p
+                            class="p-0 mt-4 text-[14.88px] leading-[24px] tracking-[0.14px] figtree font-[500] text-[#101828]">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut
+                            labore et dolore magna aliqua.in our current
+                            landscape.
+                        </p>
+                    </div>
+
+                    <!-- For mobile only Start -->
+                    <div
+                        class="flex xl:hidden flex-col items-center justify-center border-1 border-[#EAECF0] rounded-[24px] p-[24px]">
+                        <div class="flex items-center w-full">
+                            <img src="src/images/patient-10.png"
+                                class="object-cover h-[44px] w-[44px] mr-2 rounded-full" alt>
+                            <div class="flex flex-col  justify-between text-left gap-[4px]">
+                                <p class=" text-[16px] leading-[16.32px] tracking-[0.14px] text-[#101828] font-[600]">
+                                    Bessie Cooper</p>
+                                <p class="figtree text-[14px] leading-[16.8px] font-[400] tracking-[0.2px]">Happy
+                                    Client
+                                </p>
+                            </div>
+                        </div>
+
+                        <p
+                            class="p-0 mt-4 text-[14.88px] leading-[24px] tracking-[0.14px] figtree font-[500] text-[#101828]">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam.. Ut enim ad minim veniam.
+                        </p>
+                    </div>
+                    <!-- For mobile only End -->
+
+                </div>
+                <!--  -->
+                <div class=" flex flex-row flex-wrap lg:flex-col w-full sm:w-[286px] gap-6 px-4 sm:px-0">
+                    <div
+                        class="flex flex-col items-center justify-center border-1 border-[#EAECF0] rounded-[24px] p-[24px]">
+                        <div class="flex items-center w-full">
+                            <img src="src/images/patient-4.png" class="object-cover h-[44px] w-[44px] mr-2 rounded-full"
+                                alt>
+                            <div class="flex flex-col  justify-between text-left gap-[4px]">
+                                <p class=" text-[16px] leading-[16.32px] tracking-[0.14px] text-[#101828] font-[600]">
+                                    Wade Warren</p>
+                                <p class="figtree text-[14px] leading-[16.8px] font-[400] tracking-[0.2px]">Happy
+                                    Client
+                                </p>
+                            </div>
+                        </div>
+
+                        <p
+                            class="p-0 mt-4 text-[14.88px] leading-[24px] tracking-[0.14px] figtree font-[500] text-[#101828]">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center border-1 border-[#EAECF0] rounded-[24px] p-[24px]">
+                        <div class="flex items-center w-full">
+                            <img src="src/images/patient-5.png" class="object-cover h-[44px] w-[44px] mr-2 rounded-full"
+                                alt>
+                            <div class="flex flex-col  justify-between text-left gap-[4px]">
+                                <p class=" text-[16px] leading-[16.32px] tracking-[0.14px] text-[#101828] font-[600]">
+                                    Guy Hawkins</p>
+                                <p class="figtree text-[14px] leading-[16.8px] font-[400] tracking-[0.2px]">Happy
+                                    Client
+                                </p>
+                            </div>
+                        </div>
+
+                        <p
+                            class="p-0 mt-4 text-[14.88px] leading-[24px] tracking-[0.14px] figtree font-[500] text-[#101828]">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center border-1 border-[#EAECF0] rounded-[24px] p-[24px]">
+                        <div class="flex items-center w-full">
+                            <img src="src/images/patient-6.png" class="object-cover h-[44px] w-[44px] mr-2 rounded-full"
+                                alt>
+                            <div class="flex flex-col  justify-between text-left gap-[4px]">
+                                <p class=" text-[16px] leading-[16.32px] tracking-[0.14px] text-[#101828] font-[600]">
+                                    Darrell Steward</p>
+                                <p class="figtree text-[14px] leading-[16.8px] font-[400] tracking-[0.2px]">Happy
+                                    Client
+                                </p>
+                            </div>
+                        </div>
+
+                        <p
+                            class="p-0 mt-4 text-[14.88px] leading-[24px] tracking-[0.14px] figtree font-[500] text-[#101828]">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat
+                        </p>
+                    </div>
+
+                    <!-- For Resposnive View Only  Start-->
+                    <div
+                        class="flex xl:hidden flex-col items-center justify-center border-1 border-[#EAECF0] rounded-[24px] p-[24px]">
+                        <div class="flex items-center w-full">
+                            <img src="src/images/patient-11.png"
+                                class="object-cover h-[44px] w-[44px] mr-2 rounded-full" alt>
+                            <div class="flex flex-col  justify-between text-left gap-[4px]">
+                                <p class=" text-[16px] leading-[16.32px] tracking-[0.14px] text-[#101828] font-[600]">
+                                    Jane Cooper</p>
+                                <p class="figtree text-[14px] leading-[16.8px] font-[400] tracking-[0.2px]">Happy
+                                    Client
+                                </p>
+                            </div>
+                        </div>
+
+                        <p
+                            class="p-0 mt-4 text-[14.88px] leading-[24px] tracking-[0.14px] figtree font-[500] text-[#101828]">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.in
+                            our current landscape.
+                        </p>
+                    </div>
+
+                    <!-- For Resposnive View Only  End-->
+
+                </div>
+                <!--  -->
+                <div class=" flex flex-row flex-wrap justify-center lg:flex-col xl:w-[286px] gap-6 px-4 sm:px-0">
+                    <div
+                        class="flex flex-col items-center justify-center border-1 border-[#EAECF0] rounded-[24px] p-[24px] w-full sm:w-[286px]">
+                        <div class="flex items-center w-full">
+                            <img src="src/images/patient-7.png" class="object-cover h-[44px] w-[44px] mr-2 rounded-full"
+                                alt>
+                            <div class="flex flex-col  justify-between text-left gap-[4px]">
+                                <p class=" text-[16px] leading-[16.32px] tracking-[0.14px] text-[#101828] font-[600]">
+                                    Theresa Webb</p>
+                                <p class="figtree text-[14px] leading-[16.8px] font-[400] tracking-[0.2px]">Happy
+                                    Client
+                                </p>
+                            </div>
+                        </div>
+
+                        <p
+                            class="p-0 mt-4 text-[14.88px] leading-[24px] tracking-[0.14px] figtree font-[500] text-[#101828]">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis.Ut enim ad minim
+                            veniam, quis. quis.Ut enim ad minim
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center border-1 border-[#EAECF0] rounded-[24px] p-[24px] w-full sm:w-[286px]">
+                        <div class="flex items-center w-full">
+                            <img src="src/images/patient-8.png" class="object-cover h-[44px] w-[44px] mr-2 rounded-full"
+                                alt>
+                            <div class="flex flex-col  justify-between text-left gap-[4px]">
+                                <p class=" text-[16px] leading-[16.32px] tracking-[0.14px] text-[#101828] font-[600]">
+                                    Leslie Alexander</p>
+                                <p class="figtree text-[14px] leading-[16.8px] font-[400] tracking-[0.2px]">Happy
+                                    Client
+                                </p>
+                            </div>
+                        </div>
+
+                        <p
+                            class="p-0 mt-4 text-[14.88px] leading-[24px] tracking-[0.14px] figtree font-[500] text-[#101828]">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam.. Ut enim ad minim veniam.
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center border-1 border-[#EAECF0] rounded-[24px] p-[24px] w-full sm:w-[286px]">
+                        <div class="flex items-center w-full">
+                            <img src="src/images/patient-9.png" class="object-cover h-[44px] w-[44px] mr-2 rounded-full"
+                                alt>
+                            <div class="flex flex-col  justify-between text-left gap-[4px]">
+                                <p class=" text-[16px] leading-[16.32px] tracking-[0.14px] text-[#101828] font-[600]">
+                                    Ralph Edwards</p>
+                                <p class="figtree text-[14px] leading-[16.8px] font-[400] tracking-[0.2px]">Happy
+                                    Client
+                                </p>
+                            </div>
+                        </div>
+
+                        <p
+                            class="p-0 mt-4 text-[14.88px] leading-[24px] tracking-[0.14px] figtree font-[500] text-[#101828]">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam, quis nostrud exercitation
+                            ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat
+                        </p>
+                    </div>
+
+                    <!-- For Resposnive View Only  Start-->
+                    <div
+                        class="flex xl:hidden flex-col items-center justify-center border-1 border-[#EAECF0] rounded-[24px] p-[24px] w-full sm:w-[286px]">
+                        <div class="flex items-center w-full">
+                            <img src="src/images/patient-12.png"
+                                class="object-cover h-[44px] w-[44px] mr-2 rounded-full" alt>
+                            <div class="flex flex-col  justify-between text-left gap-[4px]">
+                                <p class=" text-[16px] leading-[16.32px] tracking-[0.14px] text-[#101828] font-[600]">
+                                    Kristin Watson</p>
+                                <p class="figtree text-[14px] leading-[16.8px] font-[400] tracking-[0.2px]">Happy
+                                    Client
+                                </p>
+                            </div>
+                        </div>
+
+                        <p
+                            class="p-0 mt-4 text-[14.88px] leading-[24px] tracking-[0.14px] figtree font-[500] text-[#101828]">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt
+                        </p>
+                    </div>
+
+                    <!-- For Resposnive View Only  End-->
+
+                </div>
+                <!--  -->
+                <div class="hidden xl:flex flex-row flex-wrap lg:flex-col w-full sm:w-[286px] gap-6 px-4 sm:px-0">
+                    <div
+                        class="flex flex-col items-center justify-center border-1 border-[#EAECF0] rounded-[24px] p-[24px]">
+                        <div class="flex items-center w-full">
+                            <img src="src/images/patient-10.png"
+                                class="object-cover h-[44px] w-[44px] mr-2 rounded-full" alt>
+                            <div class="flex flex-col  justify-between text-left gap-[4px]">
+                                <p class=" text-[16px] leading-[16.32px] tracking-[0.14px] text-[#101828] font-[600]">
+                                    Bessie Cooper</p>
+                                <p class="figtree text-[14px] leading-[16.8px] font-[400] tracking-[0.2px]">Happy
+                                    Client
+                                </p>
+                            </div>
+                        </div>
+
+                        <p
+                            class="p-0 mt-4 text-[14.88px] leading-[24px] tracking-[0.14px] figtree font-[500] text-[#101828]">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua. Ut
+                            enim ad minim veniam.. Ut enim ad minim veniam.
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center border-1 border-[#EAECF0] rounded-[24px] p-[24px]">
+                        <div class="flex items-center w-full">
+                            <img src="src/images/patient-11.png"
+                                class="object-cover h-[44px] w-[44px] mr-2 rounded-full" alt>
+                            <div class="flex flex-col  justify-between text-left gap-[4px]">
+                                <p class=" text-[16px] leading-[16.32px] tracking-[0.14px] text-[#101828] font-[600]">
+                                    Jane Cooper</p>
+                                <p class="figtree text-[14px] leading-[16.8px] font-[400] tracking-[0.2px]">Happy
+                                    Client
+                                </p>
+                            </div>
+                        </div>
+
+                        <p
+                            class="p-0 mt-4 text-[14.88px] leading-[24px] tracking-[0.14px] figtree font-[500] text-[#101828]">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt ut labore et dolore magna aliqua.in
+                            our current landscape.
+                        </p>
+                    </div>
+                    <div
+                        class="flex flex-col items-center justify-center border-1 border-[#EAECF0] rounded-[24px] p-[24px]">
+                        <div class="flex items-center w-full">
+                            <img src="src/images/patient-12.png"
+                                class="object-cover h-[44px] w-[44px] mr-2 rounded-full" alt>
+                            <div class="flex flex-col  justify-between text-left gap-[4px]">
+                                <p class=" text-[16px] leading-[16.32px] tracking-[0.14px] text-[#101828] font-[600]">
+                                    Kristin Watson</p>
+                                <p class="figtree text-[14px] leading-[16.8px] font-[400] tracking-[0.2px]">Happy
+                                    Client
+                                </p>
+                            </div>
+                        </div>
+
+                        <p
+                            class="p-0 mt-4 text-[14.88px] leading-[24px] tracking-[0.14px] figtree font-[500] text-[#101828]">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor
+                            incididunt
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+    </section>
+
+
+    <section name="Consultation" class=" relative  max-w-[1260px] mx-auto border-[#EAECF0] py-12 md:py-24 px-6">
+        <div class="flex items-start justify-between mx-auto gap-6 lg:gap-[100px] ">
+            <img src="src/images/contect-us.png" class="hidden lg:block w-[596px] h-[548px] custom-img"
+                alt="contect-us">
+            <div class="w-full bg-white rounded-lg">
+                <p class="text-[#74428A] text-[16px] leading-[24px] text-center font-[600] md:text-left">Request
+                    a Consultation</p>
+                <p
+                    class="font-[600] text-[36px] leading-[60px] tracking-[-2%] text-[#101828] mt-0 mb-4 text-center md:text-left">
+                    Make
+                    an
+                    Appointment</p>
+                <form id="consultationForm" class="space-y-[24px] form" novalidate>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="relative">
+                            <label for="firstName" class="font-[500] text-[14px] leading-[20px] text-[#344054]">First
+                                name</label>
+                            <input type="text" id="firstName" name="firstName"
+                                class="mt-[6px] block w-full  p-2 border border-gray-300 rounded-md focus:ring-purple-500 focus:border-purple-500"
+                                placeholder="First name">
+                            <span class="absolute text-sm text-red-600 mt-1 hidden" id="firstNameError">First name is
+                                required</span>
+                        </div>
+                        <div class="relative">
+                            <label for="phone"
+                                class="font-[500] text-[14px] leading-[20px] text-[#344054] mb-[6px]">Phone
+                                number</label>
+                            <div
+                                class="mt-[6px] flex items-center w-full border border-gray-300 rounded-lg px-3 py-2 focus-within:ring-2 focus-within:ring-purple-500 focus-within:border-purple-500">
+                                <!-- Dropdown -->
+                                <div class="relative group">
+                                    <!-- Dropdown Button -->
+                                    <button type="button" id="dropdownButton-country"
+                                        class="flex items-center space-x-1 text-gray-600 font-medium   rounded-md bg-white">
+                                        <span id="selectedCountry">US</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                                        </svg>
+                                    </button>
+
+                                    <!-- Dropdown Menu -->
+                                    <div id="dropdownMenu-country"
+                                        class="absolute hidden mt-2 bg-white border border-gray-300 rounded-lg shadow-lg z-10 w-24">
+                                        <button type="button"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            data-value="US">🇺🇸
+                                            US</button>
+                                        <button type="button"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            data-value="UK">🇬🇧
+                                            UK</button>
+                                        <button type="button"
+                                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                            data-value="CA">🇨🇦
+                                            CA</button>
+                                    </div>
+                                </div>
+
+                                <!-- Divider -->
+                                <span class="w-[1px] mx-2 h-6 bg-gray-300 mx-0"></span>
+                                <input type="tel"
+                                    class="flex-1 max-w-full  md:w-[73%] lg:w-full overflow-hidden text-gray-700 placeholder-gray-400 outline-none focus:ring-0 bg-transparent" />
+                            </div>
+                            <span class="absolute text-sm text-red-600 mt-1 hidden" id="phoneError">Please enter a valid
+                                phone number</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-0">
+                        <div class="relative">
+                            <label for="email"
+                                class="font-[500] text-[14px] leading-[20px] text-[#344054]">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="mt-[6px]  block w-full  p-2 border border-gray-300 rounded-md focus:ring-purple-500 focus:border-purple-500"
+                                placeholder="you@company.com">
+                            <span class="absolute text-sm text-red-600 mt-1 hidden" id="emailError">Please enter a valid
+                                email address</span>
+                        </div>
+                        <div class="relative">
+                            <label for="datePicker"
+                                class="font-[500] text-[14px] leading-[20px] text-[#344054]">Date</label>
+                            <div class="relative mt-[6px]">
+                                <!-- Date Input -->
+                                <input type="text" id="datePicker" placeholder="DD - MM - YYYY"
+                                    class="block w-full px-4 py-2 border border-gray-300 rounded-lg text-gray-700 placeholder-gray-400 focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+                                    readonly />
+
+                                <!-- Calendar Icon -->
+                                <svg class="absolute right-3 top-1/2 transform -translate-y-1/2 h-5 w-5 text-gray-400 pointer-events-none"
+                                    width="21" height="20" viewBox="0 0 21 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.3333 3.3335H4.66667C3.74619 3.3335 3 4.07969 3 5.00016V16.6668C3 17.5873 3.74619 18.3335 4.66667 18.3335H16.3333C17.2538 18.3335 18 17.5873 18 16.6668V5.00016C18 4.07969 17.2538 3.3335 16.3333 3.3335Z"
+                                        stroke="#475467" stroke-width="1.66667" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M13.8333 1.6665V4.99984" stroke="#475467" stroke-width="1.66667"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M7.16675 1.6665V4.99984" stroke="#475467" stroke-width="1.66667"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M3 8.3335H18" stroke="#475467" stroke-width="1.66667"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+
+                            <span class="absolute text-sm text-red-600 mt-1 hidden" id="dateError">Please select a
+                                date</span>
+                        </div>
+
+                    </div>
+                    <div class="relative mt-4">
+                        <label for="email" class="font-[500] text-[14px] leading-[20px] text-[#344054]">Message</label>
+                        <textarea name
+                            class="mt-[6px] rounded-[8px] px-[14px] py-[12px] w-full border-1 border-[#D0D5DD] h-[134px]"
+                            placeholder="Leave us a message..." id></textarea>
+                        <span class="absolute text-sm text-red-600 mt-1 hidden" id="emailError">Please enter a valid
+                            email address</span>
+                    </div>
+                    <button type="submit"
+                        class="w-full md:w-auto bg-[#74428A] text-white px-[24px] py-[19px] rounded-full font-semibold transition duration-300 hover:bg-[#633875] focus:outline-none focus:ring-2 focus:ring-purple-500">
+                        Book an Appointment
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section name="Articles & Tips" class=" py-12 md:py-24 my-4 bg-[#F9FAFB]">
+        <div class="flex items-center justify-center flex-col max-w-[1260px] mx-auto">
+            <p class="text-[#74428A] text-[16px] leading-[24px] text-center font-[600]">Articles
+                & Tips</p>
+            <p
+                class="font-[600] text-center text-[30px] md:text-[36px] leading-[36px] md:leading-[50px] md:leading-[60px] target-[-2%] py-4">
+                Latest News & Blogs</p>
+            <p
+                class="text-center font-[400] text-[16px] sm:text-[20px] leading-[30px] figtree text-[#475467] mb-12 w-full px-5 md:px-0 md:w-[50%]">
+                Lorem
+                ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:px-6 px-4">
+                <!-- Card 1 -->
+                <div class="max-w-full rounded-lg  overflow-hidden ">
+                    <div class="md:max-h-[200px] lg:max-h-[180px] xl:max-h-[230px] overflow-hidden">
+                        <img src="src/images/artical1.png" alt="Office Workspace"
+                            class="w-full h-auto w-[384px] object-cover">
+                    </div>
+                    <div class="py-4 ">
+                        <p class="text-[#74428A] text-xs font-semibold mb-2 ">Lorem</p>
+                        <div class="flex items-center justify-between">
+                            <h2 class="text-lg font-semibold text-gray-900">Migrating
+                                to Linear 101</h2>
+                            <a href="#" class="text-gray-500">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 17L17 7" stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M7 7H17V17" stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                        </div>
+                        <p class="text-sm text-gray-600 mt-2 w-[92%] p-0 m-0 ">Linear
+                            helps streamline software
+                            projects, sprints, tasks,
+                            and bug
+                            tracking. Here’s how to get started.</p>
+                        <div class="flex items-center mt-4">
+                            <img src="src/images/author-1.png" alt="author-1"
+                                class="w-10 h-10 rounded-full mr-3 object-cover">
+                            <div>
+                                <p class="text-sm font-semibold text-gray-900">Olivia
+                                    Rhye</p>
+                                <p class="text-sm text-gray-500">20 Jan
+                                    2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="max-w-full rounded-lg  overflow-hidden">
+                    <div class="md:max-h-[200px] lg:max-h-[180px] xl:max-h-[230px] overflow-hidden">
+                        <img src="src/images/artical2.png" alt="Creative Workspace"
+                            class="w-full h-auto w-[384px] object-cover">
+                    </div>
+                    <div class="py-4">
+                        <p class="text-[#74428A] text-xs font-semibold mb-2 ">Design</p>
+                        <div class="flex items-center justify-between">
+                            <h2 class="text-lg font-semibold text-gray-900">Exploring
+                                Design Systems</h2>
+                            <a href="#" class="text-gray-500">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 17L17 7" stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M7 7H17V17" stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                        </div>
+                        <p class="text-sm text-gray-600 mt-2 w-[92%] p-0 m-0 ">Learn
+                            how to create a cohesive design
+                            system for your
+                            product.</p>
+                        <div class="flex items-center mt-4">
+                            <img src="src/images/author-2.png" alt="author-2"
+                                class="w-10 h-10 rounded-full mr-3 object-cover">
+                            <div>
+                                <p class="text-sm font-semibold text-gray-900">John
+                                    Doe</p>
+                                <p class="text-sm text-gray-500">15 Feb
+                                    2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="max-w-full rounded-lg  overflow-hidden">
+                    <div class="md:max-h-[200px] lg:max-h-[180px] xl:max-h-[230px] overflow-hidden">
+                        <img src="src/images/artical3.png" alt="Development Setup"
+                            class="w-full h-auto w-[384px] object-cover">
+                    </div>
+                    <div class="py-4">
+                        <p class="text-[#74428A] text-xs font-semibold mb-2 ">Development</p>
+                        <div class="flex items-center justify-between">
+                            <h2 class="text-lg font-semibold text-gray-900">Mastering
+                                DevOps Tools</h2>
+                            <a href="#" class="text-gray-500">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 17L17 7" stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M7 7H17V17" stroke="black" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                        </div>
+                        <p class="text-sm text-gray-600 mt-2 w-[92%] p-0 m-0 ">Get
+                            hands-on with popular DevOps tools
+                            and streamline
+                            deployment.</p>
+                        <div class="flex items-center mt-4">
+                            <img src="src/images/author-3.png" alt="author-3"
+                                class="w-10 h-10 rounded-full mr-3 object-cover">
+                            <div>
+                                <p class="text-sm font-semibold text-gray-900">Jane
+                                    Smith</p>
+                                <p class="text-sm text-gray-500">10 Mar
+                                    2022</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-full flex items-center justify-center mt-10">
+                <a href="#"
+                    class="text-[18px] w-fit mx-auto mt-8 rounded-[40px] leading-[21.6px] font-[600] bg-[#74428A] text-white px-6 py-3">View
+                    All Blog</a>
+            </div>
+    </section>
+
+    </div>
+
+    <!-- Footer content Start -->
+    <footer class="relative px-6  md:pl-12  w-fit mx-auto  py-4 ">
+        <div class="flex items-start justify-between container mx-auto ">
+            <div class="flex items-start justify-between w-full flex-wrap gap-[40px]">
+                <div class="md:w-[320px]">
+                    <img src="./src/images/logo.svg" alt="Sakalli IVF Logo" class="h-10 ">
+                    <p class="text-[#475467] text-[16px] leading-[24px] figtree font-[400] mt-6 mb-8">
+                        Quis autem vel eum iure reprehenderit rui in
+                        ea voluptate velit esse quam nihil moles
+                        illum rui
+                        dolorem eum fugiat.
+                    </p>
+                    <p class="mt-4 text-[#475467] font-[600] figtree text-[#475467] leading-[24px]">
+                        Suscipit laboriosam, nisi ut aliquid commo
+                        nostrum veniam...
+                    </p>
+                </div>
+                <div class="md:w-[521px]">
+                    <h2 class="text-[#667085] text-[14px] leading-[20px] font-[600]">Our
+                        Services</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-600">
+                        <ul class="space-y-2 figtree text-[16px] text-[#475467] leading-[24px] font-[600] mt-4">
+                            <li>Becoming an Egg Donor</li>
+                            <li>Donation</li>
+                            <li>Fertility Preservation</li>
+                            <li>Fertility Testing & Diagnosis</li>
+                        </ul>
+                        <ul class="space-y-2 figtree text-[16px] text-[#475467] leading-[24px] font-[600] mt-4">
+                            <li>IVF and Fertility Treatments</li>
+                            <li>Process & Pricing</li>
+                            <li>Reproductive & Genetic Testing</li>
+                            <li>Surrogacy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-[317px]">
+                    <h2 class="text-[#667085] text-[14px] leading-[20px] font-[600] mb-4">Contact
+                        Us</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <img src="src/images/location-icon.svg" alt="Location Icon" class="h-5 w-5 mr-3 mt-1">
+                            <span class="figtree text-[16px] text-[#475467] leading-[24px] font-[600]">Prof.
+                                Hilmi İleri
+                                Sk no:24, Nicosia/ TRNC</span>
+                        </li>
+                        <li class="flex items-start">
+                            <img src="src/images/mail-icon.svg" alt="Email Icon" class="h-5 w-5 mr-3">
+                            <span
+                                class=" figtree text-[16px] text-[#475467] leading-[24px] font-[600]">info@saklliivf.com</span>
+                        </li>
+                        <li class="flex items-start">
+                            <img src="src/images/mob-icon.svg" alt="Phone Icon" class="h-5 w-5 mr-3">
+                            <span
+                                class="figtree text-[16px] text-[#475467] leading-[24px] font-[600]">+905428840202</span>
+                        </li>
+                    </ul>
+                    <div class="flex space-x-4 mt-4">
+                        <img src="src/images/twt-icon.svg" alt="Twitter Icon" class="cursor-pointer h-6 w-6">
+                        <img src="src/images/linkdin-icon.svg" alt="LinkedIn Icon" class="cursor-pointer h-6 w-6">
+                        <img src="src/images/fb-icon.svg" alt="Facebook Icon" class="cursor-pointer h-6 w-6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer content End -->
+
+
+    <!-- Copyright Start-->
+    <div class=" relative w-full py-4 bg-[#F5EEF9] ">
+        <p class="text-center text-[#74428A] text-[16px] font-[400] leading-[16.32px]">Copyright
+            © Sakalli IVF. All
+            rights reserved</p>
+    </div>
+    <!-- Copyright End-->
+
+    <script src="./src/js/custom.js"></script>
+
 </body>
+
 </html>
