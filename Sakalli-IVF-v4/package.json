@@ -1,10 +1,6 @@
 {
-  "name": "sakalli-ivf-copy",
-  "version": "1.0.0",
-  "description": "Static Tailwind Project",
-  "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./src/css/theme.css -o ./dist/css/output.css --minify && cp index.html dist/index.html",
+    "build": "npx tailwindcss -i ./src/css/theme.css -o ./dist/css/output.css --minify",
     "tw": "npx tailwindcss -i ./src/css/theme.css -o ./src/css/output.css --watch"
   },
   "dependencies": {
@@ -21,9 +17,10 @@
     "webpack": "^5.97.1",
     "webpack-cli": "^6.0.1"
   },
-  "engines": {
-    "node": "18.x"
-  },
-  "author": "Sujit",
-  "license": "ISC"
-}
+  "name": "sakalli-ivf---copy",
+  "version": "1.0.0",
+  "main": "tailwind.config.js",
+  "author": "Sandeep",
+  "license": "ISC",
+  "description": ""
+} 
